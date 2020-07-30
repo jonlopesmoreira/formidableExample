@@ -23,4 +23,7 @@ app.post('/', function (req, res){
     res.sendFile(__dirname + '/index.html');
 });
 
-app.listen(3000);
+app.listen(3000, ()=>
+{
+    console.log("App is running at http://www.localhost:3000")
+});
